@@ -37,5 +37,6 @@ setuptools.setup(
     zip_safe=False,
     entry_points={
         "napari.manifest": ["cellprofiler_library=cellprofiler_library:napari.yaml",],
+        "napari.plugin": ["cellprofiler_library = cellprofiler_library._function",],
     }
 )

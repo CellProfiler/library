@@ -2,7 +2,7 @@ import centrosome.cpmorphology
 import numpy
 import scipy.ndimage
 
-def shrink_to_point(labels, fill):
+def shrink_to_point(labels: "napari.types.LabelsData", fill: bool) -> "napari.types.LabelsData":
     """
     Remove all pixels but one from filled objects.
     If `fill` = False, thin objects with holes to loops.

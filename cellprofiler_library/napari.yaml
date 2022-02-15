@@ -1,0 +1,11 @@
+name: cellprofiler-library
+display_name: cellprofiler-library
+contributions:
+  commands:
+    - id: cellprofiler_library.shrink_to_point
+      python_name: cellprofiler_library.expandorshrinkobjects:shrink_to_point
+      title: Shrink to point
+  widgets:
+    - command: cellprofiler_library.shrink_to_point
+      autogenerate: true
+      display_name: Shrink to point

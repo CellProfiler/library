@@ -29,10 +29,13 @@ setuptools.setup(
     ],
     license="BSD",
     name="cellprofiler-library",
-    package_data={"cellprofiler_library": ["py.typed"]},
+    package_data={"cellprofiler-library": ["py.typed", "napari.yaml"]},
     packages=setuptools.find_packages(exclude=["tests"]),
     python_requires=">=3.8",
     url="https://github.com/CellProfiler/library",
     version="0.0.0",
     zip_safe=False,
+    entry_points={
+        "napari.manifest": ["cellprofiler_library=cellprofiler_library:napari.yaml",],
+    }
 )

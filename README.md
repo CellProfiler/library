@@ -1,6 +1,8 @@
 # library
 
-cellprofiler-library is currently an experiment - use at your own risk.
+ARCHIVED - we still plan to do this but will be doing it in the main CellProfiler repository instead. 
+
+cellprofiler-library was an experiment - use at your own risk.
 
 The idea is to collect all of CellProfiler's "discrete functions" into a single library.
 This allows import in places like napari or jupyter or any other python place you like.
